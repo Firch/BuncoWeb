@@ -52,12 +52,6 @@ html, body {
     margin-bottom: 64px;
 }
 
-@media screen and (max-width: 960px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .screenshot {
     width: 100%;
     height: auto;
@@ -96,4 +90,15 @@ html, body {
 
 .footer {
     height: 32px;
+}
+
+@media screen and (max-width: 960px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        margin-top: 256px;
+        margin-bottom: 192px;
+    }
 }

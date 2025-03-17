@@ -15,7 +15,7 @@ let smooth
 
 document.addEventListener("scroll", () => {
     let currentScrollY = window.scrollY;
-    scrollSpeed = lerp(scrollSpeed, (currentScrollY - lastScrollY), 0.1);
+    scrollSpeed = lerp(scrollSpeed, (currentScrollY - lastScrollY), 0.2);
     lastScrollY = currentScrollY;
 
     const arrow = document.getElementById("arrow");
@@ -25,7 +25,6 @@ document.addEventListener("scroll", () => {
         arrow.style.opacity = "1";
     }
 });
-
 
 setInterval(() => {
     if (scrollSpeed > 0) {
